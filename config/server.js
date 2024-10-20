@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
-  port: process.env.PORT || 4000,
+  port: process.env.PORT || 10000,
   app: {
     keys: env.array('APP_KEYS' , ['myKeyA', 'myKeyB']),
   },
