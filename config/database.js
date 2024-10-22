@@ -41,6 +41,8 @@
 //         },
 //     },
 // });
+//
+
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
@@ -59,3 +61,11 @@ module.exports = ({ env }) => ({
     },
   },
 });
+console.log('Client:', env('DATABASE_CLIENT'));
+console.log('Host:', env('DATABASE_HOST'));
+console.log('Port:', env.int('DATABASE_PORT'));
+console.log('Database:', env('DATABASE_NAME'));
+console.log('Username:', env('DATABASE_USERNAME'));
+console.log('Password:', env('DATABASE_PASSWORD'));
+console.log('SSL:', env.bool('DATABASE_SSL', true));
+
