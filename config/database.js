@@ -42,30 +42,32 @@
 //     },
 // });
 //
-const { env } = require('@strapi/utils');
-module.exports = ({ env }) => ({
-  defaultConnection: 'default',
-  connections: {
-    default: {
-      connector: 'bookshelf',
-      settings: {
-        client: 'postgres',
-        host: 'aws-0-ap-south-1.pooler.supabase.com',
-        port: 5432,
-        database: 'postgres',
-        username: 'postgres.mifojjzyauienvblcvwc',
-        password: 'ainmnin@school2015',
-        ssl: true
-      },
-      options: {},
-    },
-  },
-});
-console.log('Client:', env('DATABASE_CLIENT'));
-console.log('Host:', env('DATABASE_HOST'));
-console.log('Port:', env.int('DATABASE_PORT'));
-console.log('Database:', env('DATABASE_NAME'));
-console.log('Username:', env('DATABASE_USERNAME'));
-console.log('Password:', env('DATABASE_PASSWORD'));
-console.log('SSL:', env.bool('DATABASE_SSL', true));
+/////
+// const { env } = require('@strapi/utils');
+// module.exports = ({ env }) => ({
+//   defaultConnection: 'default',
+//   connections: {
+//     default: {
+//       connector: 'bookshelf',
+//       settings: {
+//         client: 'postgres',
+//         host: 'aws-0-ap-south-1.pooler.supabase.com',
+//         port: 5432,
+//         database: 'postgres',
+//         username: 'postgres.mifojjzyauienvblcvwc',
+//         password: 'ainmnin@school2015',
+//         ssl: true
+//       },
+//       options: {},
+//     },
+//   },
+// });
+console.log('Client:', 'postgres');
+console.log('Host:', 'aws-0-ap-south-1.pooler.supabase.com');
+console.log('Port:', 5432);
+console.log('Database:', 'postgres');
+console.log('Username:', 'postgres.mifojjzyauienvblcvwc');
+console.log('Password:', '********');
+console.log('SSL:', true);
+
 
