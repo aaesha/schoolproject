@@ -67,7 +67,7 @@ console.log('Host:', 'aws-0-ap-south-1.pooler.supabase.com');
 console.log('Port:', 6543);
 console.log('Database:', 'postgres');
 console.log('Username:', 'postgres.mifojjzyauienvblcvwc');
-console.log('Password:', '********');
+console.log('Password:', 'ainmnin@school2015');
 console.log('SSL:', true);
 
 
