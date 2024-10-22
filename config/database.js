@@ -42,7 +42,7 @@
 //     },
 // });
 //
-
+const { env } = require('@strapi/utils');
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
